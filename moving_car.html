@@ -1,0 +1,39 @@
+<!-- Author: Hamza Aziz -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>BG Animation</title>
+      <style type="text/css">
+         *{
+         margin: 0;
+         padding: 0;
+         }
+         .bg{
+         background-image: url(img/33159.jpg);
+         height: 1000px;
+         position: relative;
+         animation: aniBg 10s linear infinite;
+         background-position: bottom left;
+         }
+         .bike{
+         position: absolute;
+         left: 80px;
+         bottom: 55px;
+         width: 500px;
+         }
+         body{
+         background-size: cover;
+         }
+         @keyframes aniBg{
+         from{background-position: bottom left;}
+         to{background-position: bottom right;}
+         }
+      </style>
+   </head>
+   <body>
+      <div class="bg">
+         <img src="img/car.png" class="bike">	
+      </div>
+      <a href="http://www.freepik.com">Designed by brgfx / Freepik</a>
+   </body>
+</html>
